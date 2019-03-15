@@ -1,0 +1,32 @@
+{
+  "name": "spinwithfriends-app",
+  "version": "1.0.0",
+  "description": "Play music with your friends remotely.",
+  "private": true,
+  "main": "server.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeapiekiyay/spinwithfriends-app.git"
+  },
+  "keywords": [
+    "music",
+    "spin",
+    "with",
+    "friends",
+    "dj",
+    "spotify"
+  ],
+  "author": "Michael Yeaple <michael@yeapleinnovations.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/yeapiekiyay/spinwithfriends-app/issues"
+  },
+  "homepage": "https://github.com/yeapiekiyay/spinwithfriends-app#readme",
+  "dependencies": {
+    "koa": "^2.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
