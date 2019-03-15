@@ -1,13 +1,16 @@
 FROM node:10.15.3-alpine
 
-WORKDIR /app
+# Keep package.json and node_modules at the root
+WORKDIR /
 
-COPY ./package.json /app
-COPY ./src /app
+COPY ./package.json /
 
 RUN npm install -g nodemon@1.18.10
 RUN npm install
-RUN mv /app/node_modules /node_modules
+
+# Keep our app in /app
+WORKDIR /app
+COPY ./src /app
 
 ENV PORT=80
 

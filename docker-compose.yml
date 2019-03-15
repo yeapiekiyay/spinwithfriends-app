@@ -6,6 +6,7 @@ services:
     image: yeapiekiyay/spin-with-friends-app
     volumes:
       - "./src:/app"
+      - "./package.json:/package.json"
     ports:
       - "8000:80"
       - "5858:5858"
